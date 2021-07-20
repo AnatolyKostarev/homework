@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<title>Box model + size</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+​
+<style>
+    .task-1,
+    .task-2,
+    .task-3,
+    .task-4,
+    .task-5 {
+        outline: 1px solid orange;
+    }
+</style>
+<h1>Box model + size</h1>
+​
+<!--
+  Для решения заданий не меняйте html разметку блоков,
+  только CSS код внутри style внутри задания
+-->
+​
+<!-- Задание #1: Задайте блоку размер 240x110px -->
+<section>
+    <span class="task-1">Блок</span>
+    <style>
+        .task-1 {
+            display: inline-block;
+            width: 240px;
+            height: 110px;
+        }
+    </style>
+</section>
+​
+<!--
+  Задание #2: Задайте блоку ширину в 100%
+  и минимальную ширину в 200px и максимальную в 400px
+-->
+<section>
+    <div class="task-2">Блок</div>
+    <style>
+        .task-2 {
+            display: block;
+            width: 100%;
+            min-width: 200px;
+            max-width: 400px;
+        }
+    </style>
+</section>
+​
+<!--
+  Задание #3: Задайте блоку ширину в 100%
+  и минимальную ширину в 200px и максимальную в 400px
+-->
+<section>
+    <div class="task-3">Блок</div>
+    <style></style>
+</section>
+​
+<!--
+  Задание #4: Какая ширина у блока? Почему столько? w260px
+-->
+<section>
+    <div class="task-4">Ширина:</div>
+    <style>
+        .task-4 {
+            width: 200px;
+            padding: 20px;
+            border: 10px solid gray;
+            margin: 20px;
+        }
+    </style>
+</section>
+​
+<!--
+  Задание #5: Какая ширина у блока? Почему столько? w200px
+-->
+<section>
+    <div class="task-5">Ширина:</div>
+    <style>
+        .task-5 {
+            width: 200px;
+            padding: 20px;
+            border: 10px solid gray;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</section>
