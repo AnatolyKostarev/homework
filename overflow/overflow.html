@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<title>Overflow</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+<style>
+    .h-container {
+        display: flex;
+        height: 100px;
+    }
+    .v-container {
+        display: flex;
+        height: 200px;
+        flex-direction: column;
+    }
+    .h-box {
+        height: 100%;
+        width: 25%;
+    }
+    .v-box {
+        width: 100%;
+        height: 25%;
+    }
+    .h-box,
+    .v-box {
+        box-sizing: border-box;
+        border: 1px solid;
+        flex-shrink: 0;
+    }
+</style>
+​
+<h1>Overflow</h1>
+​
+<!--
+  Для решения заданий не меняйте html разметку блоков,
+  только CSS код внутри style внутри задания
+-->
+​
+<!-- Задание #1: Скройте элементы выходящие за границы блока task-1 -->
+<section>
+    <div class="task-1 h-container">
+        <div class="h-box">1</div>
+        <div class="h-box">2</div>
+        <div class="h-box">3</div>
+        <div class="h-box">4</div>
+        <div class="h-box">5</div>
+        <div class="h-box">6</div>
+    </div>
+    <style>
+        .task-1 {
+            overflow: hidden;
+        }
+    </style>
+</section>
+​
+<!-- Задание #2: Скройте элементы выходящие за границы блока task-2 -->
+<section>
+    <div class="task-2 v-container">
+        <div class="v-box">1</div>
+        <div class="v-box">2</div>
+        <div class="v-box">3</div>
+        <div class="v-box">4</div>
+        <div class="v-box">5</div>
+        <div class="v-box">6</div>
+    </div>
+    <style>
+        .task-2 {
+            overflow-y: hidden;
+        }
+    </style>
+</section>
+​
+<!-- Задание #3: Добавьте горизонтальную прокрутку которая видна всегда -->
+<section>
+    <div class="task-3 h-container">
+        <div class="h-box">1</div>
+        <div class="h-box">2</div>
+        <div class="h-box">3</div>
+        <div class="h-box">4</div>
+        <div class="h-box">5</div>
+        <div class="h-box">6</div>
+    </div>
+    <div class="task-3 h-container">
+        <div class="h-box">1</div>
+        <div class="h-box">2</div>
+        <div class="h-box">3</div>
+    </div>
+    <style>
+        .task-3 {
+            overflow-x: auto;
+        }
+    </style>
+</section>
+​
+<!-- Задание #4: Добавьте вертикальную прокрутку если она нужна -->
+<section>
+    <div class="task-4 v-container">
+        <div class="v-box">1</div>
+        <div class="v-box">2</div>
+        <div class="v-box">3</div>
+    </div>
+    <div class="task-4 v-container">
+        <div class="v-box">1</div>
+        <div class="v-box">2</div>
+        <div class="v-box">3</div>
+        <div class="v-box">4</div>
+        <div class="v-box">5</div>
+        <div class="v-box">6</div>
+    </div>
+    <style>
+        .task-4 {
+            overflow-y: auto;
+        }
+    </style>
+</section>

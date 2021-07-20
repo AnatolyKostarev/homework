@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<title>Selectors</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+
+<h1>Selectors + grouping</h1>
+
+<!-- 
+  Задание #1: Задайте всем трем классам красный цвет 
+  и сбросьте внутренние отступы 
+-->
+<section>
+  <p class="task-1-p">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eligendi molestiae minima
+    quidem rem necessitatibus nesciunt aperiam ipsa temporibus recusandae, illum obcaecati porro
+    vel. Vero qui officiis debitis dolore doloremque.
+  </p>
+  <blockquote class="task-1-blockquote">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, obcaecati. Minima distinctio
+    sit totam reprehenderit unde fuga est eos numquam sunt architecto, nihil magni praesentium vero,
+    officiis rem! Dolorum, aperiam?
+  </blockquote>
+  <strong class="task-1-strong">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente velit maxime quisquam, itaque
+    eum impedit cum iure exercitationem natus eveniet. Ut dicta cupiditate veritatis debitis sint
+    dolorum ea odit tempore?
+  </strong>
+  <style>
+    .task-1-p,
+    .task-1-blockquote,
+    .task-1-strong {
+      padding: 0;
+      color: red;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #2: Задайте всем элементам внутри task-2 
+  внешний отступ по вертикали 10px
+-->
+<section class="task-2">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+  <style>
+    .task-2 p,
+    .task-2 div {
+      margin-top: 10px;
+    }
+    .task-2 span {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #3: Задайте всем потомкам task-3 внешний отступ по вертикали 10px
+-->
+<section class="task-3">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+  <style>
+    .task-3 p,
+    .task-3 div {
+      margin-top: 10px;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #4: Задайте всем span-элементам 
+  которые следуют сразу после task-4 красный цвет
+  (селектор братских элементов "~")
+-->
+<section>
+  <div class="task-4">444</div>
+  <span>span 1</span>
+  <div class="task-4">444</div>
+  <div>div 1</div>
+  <span>span 2</span>
+  <style>
+    .task-4 ~ span {
+      color: red;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #5: Задайте всем span-элементам которые 
+  находятся на одном уровне с task-5 красный цвет
+  (смежные селекторы "+")
+-->
+<section>
+  <div class="task-5">444</div>
+  <span>span 1</span>
+  <div>div 1</div>
+  <span>span 2</span>
+  <style>
+    .task-5 + span {
+      color: red;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #6: Задайте всем ссылкам у которых есть 
+  атрибут target какой-нибудь цвет фона 
+-->
+<section class="task-6">
+  <a href="https://yandex.com">yandex.com</a>
+  <a href="http://www.disney.com" target="_blank">disney.com</a>
+  <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+  <style>
+    .task-6 a[target] {
+      background-color: yellow;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #7: Задайте всем ссылкам у которых
+  атрибут target = _blank какой-нибудь цвет фона
+-->
+<section class="task-7">
+  <a href="https://yandex.com">yandex.com</a>
+  <a href="http://www.disney.com" target="_blank">disney.com</a>
+  <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+  <style>
+    .task-7 a[target="_blank"] {
+      background-color: fuchsia;
+    }
+  </style>
+</section>
+
+<!-- 
+
+
+  ДОПОЛНИТЕЛЬНЫЕ ЗАДАНИЯ
+  выполняются дома, либо на занятии если есть свободное время
+  
+
+-->
+
+<aside>
+  <h2>Дополнительно</h2>
+
+  <!-- 
+    Задание #7: Установить любую рамку у элементов с 
+    атрибутом "title" в котором есть слово "red"
+  -->
+  <section class="task-7">
+    <img src="http://lorempixel.com/400/200" title="two red flowers" />
+    <img src="http://lorempixel.com/400/200" title="purple flower" />
+    <img src="http://lorempixel.com/400/200" title="red flower" />
+    <img src="http://lorempixel.com/400/200" title="two white flowers" />
+    <style>
+      .task-7 img[title*="red"] {
+        border: 5px solid red;
+      }
+    </style>
+  </section>
+
+  <!-- 
+    Задание #8: Установить любую рамку у элементов с 
+    атрибутом "title" которые начинаются на "red"
+  -->
+  <section class="task-8">
+    <img src="http://lorempixel.com/400/200" title="two red flowers" />
+    <img src="http://lorempixel.com/400/200" title="purple flower" />
+    <img src="http://lorempixel.com/400/200" title="red flower" />
+    <img src="http://lorempixel.com/400/200" title="two white flowers" />
+    <style>
+      .task-8 img[title^="red"] {
+        border: 5px solid red;
+      }
+    </style>
+  </section>
+</aside>

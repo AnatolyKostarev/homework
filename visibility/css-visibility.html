@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<title>Visibility</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+<h1>Visibility</h1>
+
+<!-- 
+  Для решения заданий не меняйте html разметку блоков, 
+  только CSS код внутри style внутри задания 
+-->
+
+<!-- Задание #1: Скройте блок task-1, чтобы этот элемент на занимал место -->
+<section>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <p class="task-1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <style>
+    .task-1 {
+      display: none;
+    }
+  </style>
+</section>
+
+<!-- Задание #2: Скройте блок task-2, чтобы осталось место занятое этим блоком -->
+<section>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <p class="task-2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <style>
+    .task-2 {
+      visibility: hidden;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #3: Скройте блок task-3 от глаз, но так чтобы он 
+  остался доступен семантически (например для устройств чтения с экрана)
+-->
+<section>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <p class="task-3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <style>
+    .task-3 {
+      opacity: 0;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #4: Скройте блок task-4 семантически 
+  (например для устройств чтения с экрана)
+  (нужно что-то добавить в html, стили не трогать)
+-->
+<section>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <p class="task-4" aria-hidden="true">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum officia? Sit,
+    minima?
+  </p>
+</section>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<title>Flexbox</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+<style>
+  .square {
+    min-width: 100px;
+    min-height: 100px;
+    line-height: 100px;
+    margin-bottom: 20px;
+    background-color: burlywood;
+    border: 1px solid green;
+    text-align: center;
+  }
+  .flex {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-height: 300px;
+    min-width: 300px;
+  }
+</style>
+
+<h1>Flexbox</h1>
+
+<!-- 
+  Для решения заданий не меняйте html разметку блоков, 
+  только CSS код внутри style внутри задания 
+-->
+
+<!-- 
+  Расположите элементы флекс-сетки в две равные колонки. 
+  Сделайте так, чтобы они занимали всё свободное место в контейнере поровну
+-->
+<section>
+  <ul class="flex task-1">
+    <li class="square">1</li>
+    <li class="square">2</li>
+    <li class="square">3</li>
+    <li class="square">4</li>
+    <li class="square">5</li>
+    <li class="square">6</li>
+    <li class="square">7</li>
+    <li class="square">8</li>
+    <li class="square">9</li>
+  </ul>
+  <style>
+    .task-1 {
+
+    }
+  </style>
+</section>
+
+<!-- 
+  Расположите в три колонки, разверните задом-наперёд. 
+  Пусть первый по отображению на экране элемент занимал 
+  всё доступное ему свободное место 
+-->
+<section>
+  <ul class="flex task-2">
+    <li class="square">1</li>
+    <li class="square">2</li>
+    <li class="square">3</li>
+    <li class="square">4</li>
+    <li class="square">5</li>
+    <li class="square">6</li>
+    <li class="square">7</li>
+    <li class="square">8</li>
+    <li class="square">9</li>
+  </ul>
+  <style></style>
+</section>
+
+<!-- 
+  Расположите элементы в ряд. Поменяйте порядок элементов, 
+  так чтобы самый последний стал первым. Выровняйте элементы по центру. 
+-->
+<section>
+  <ul class="flex task-3">
+    <li class="square">1</li>
+    <li class="square">2</li>
+    <li class="square">3</li>
+    <li class="square">4</li>
+    <li class="square">5</li>
+    <li class="square">6</li>
+    <li class="square">7</li>
+    <li class="square">8</li>
+    <li class="square">9</li>
+  </ul>
+  <style>
+    .task-3 {
+
+    }
+  </style>
+</section>
+
+<!-- 
+
+
+  ДОПОЛНИТЕЛЬНЫЕ ЗАДАНИЯ
+  выполняются дома, либо на занятии если есть свободное время
+  
+
+-->
+
+<aside style="opacity: 0.5">
+  <h2>Дополнительно</h2>
+
+  <!-- 
+  Расположите элементы в ряд. Сделайте так чтобы элементы 
+  чётные элементы выравнивались по верху, а нечётные по низу 
+-->
+  <section>
+    <ul class="flex task-4">
+      <li class="square">1</li>
+      <li class="square">2</li>
+      <li class="square">3</li>
+      <li class="square">4</li>
+      <li class="square">5</li>
+      <li class="square">6</li>
+      <li class="square">7</li>
+      <li class="square">8</li>
+      <li class="square">9</li>
+    </ul>
+    <style></style>
+  </section>
+</aside>

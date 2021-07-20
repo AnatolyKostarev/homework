@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<title>Position</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+<style>
+    .square {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+        background-color: burlywood;
+        border: 1px solid green;
+        text-align: center;
+        padding: 10px;
+    }
+    body {
+        height: 2000px;
+    }
+</style>
+<h1>Position</h1>
+​
+<!--
+  Для решения заданий не меняйте html разметку блоков,
+  только CSS код внутри style внутри задания
+-->
+​
+<!-- Расположите элементы на странице согласно их текстовому описанию -->
+<div class="square task-1">Прилипчивый элемент</div>
+<style>
+    .task-1 {
+        position: sticky;
+        top: 0;
+    }
+</style>
+​
+<div class="square task-2">Абсолютно, чуть ниже правого верхнего угла</div>
+<style>
+    .task-2 {
+        position: fixed;
+        top: 20px;
+        right: 0;
+    }
+</style>
+​
+<div class="square task-3">Расположен правее на 250 px</div>
+<style>
+    .task-3 {
+        position: fixed;
+        right: 250px;
+    }
+</style>
+​
+<div class="square task-4">Двигается вместе со скроллом</div>
+<style>
+    .task-4 {
+        position: absolute;
+        right: 0;
+    }
+</style>
+​
+<div class="square task-5">Стандартное поведение</div>
+<style>
+    .task-5 {
+        position: static;
+    }
+</style>
+Свернуть

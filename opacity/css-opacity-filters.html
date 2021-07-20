@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<title>Opacity + filters</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+<h1>Opacity + filters</h1>
+
+<!-- 
+  Для решения заданий не меняйте html разметку блоков, 
+  только CSS код внутри style внутри задания 
+-->
+
+<!-- Задание #1: Добавьте прозрачность в 25% блоку -->
+<section>
+  <img class="task-1" src="https://picsum.photos/200/200" alt="" />
+  <style>
+    .task-1 {
+      opacity: 0.25;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #2: Сделайте так, чтобы у фона под текстом была прозрачность в 25% 
+  (т.е. чтобы текст и рамка остались непрозрачными)
+-->
+<section>
+  <div class="task-2">Lorem ipsum</div>
+  <style>
+    .task-2 {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid;
+      background: hsla(0, 100%, 50%, 0.25);
+    }
+  </style>
+</section>
+
+<!-- Задание #3: Повторите предыдущее задание, но другим способом -->
+<section>
+  <div class="task-3">Lorem ipsum</div>
+  <style>
+    .task-3 {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid;
+      background: rgba(255, 0, 0, 0.25);
+    }
+  </style>
+</section>
+</section>
+
+<!-- Задание #4: Сделайте изображение черно-белым -->
+<section>
+  <img class="task-4" src="https://picsum.photos/300/300" alt="" />
+  <style>
+    .task-4 {
+      filter: grayscale(100%);
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #5: Задайте для task-5 фоновую картинку https://picsum.photos/600/400 
+  расположите ее по центру и растяните красиво на все пространство
+  и добавьте ей размытие в 8px
+-->
+<section>
+  <div class="task-5"></div>
+  <style>
+    .task-5 {
+      height: 400px;
+      background-image: url("https://picsum.photos/600/400");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: blur(8px);
+    }
+  </style>
+</section>
+
+
+<!-- 
+
+
+  ДОПОЛНИТЕЛЬНЫЕ ЗАДАНИЯ
+  выполняются дома, либо на занятии если есть свободное время
+  
+
+-->
+
+<aside>
+  <h2>Дополнительно</h2>
+
+  <!-- Задание #6: Сделайте изображение полу-прозрачным при наведении -->
+  <section style="opacity: 0.5">
+    <img class="task-6" src="https://picsum.photos/300/300" alt="" />
+    <style>
+      .task-6:hover {
+        opacity: 0.5;
+      }
+    </style>
+  </section>
+</aside>
