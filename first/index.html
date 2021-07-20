@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<title>Inline, block, inline-block</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+​
+<h1>Inline, block, inline-block</h1>
+​
+<!-- Для решения заданий не меняйте html разметку блоков, только CSS внутри style -->
+<!-- Задание №1: Не применяются размеры для блока, исправьте это -->
+<section>
+    <span class="task-1">100x100</span>
+    <style>
+        .task-1 {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</section>
+​
+<!--
+  Задание №2: Уберите отступ под картинкой и сделайте так чтобы блок
+  task-2 оборачивал картинку, а не растягивался на всю ширину
+-->
+<section>
+    <div class="task-2">
+        <img src="https://picsum.photos/200/300" alt="" />
+    </div>
+    <style>
+        .task-2 {
+            display: inline-block;
+            border: 1px solid #000;
+        }
+        .task-2 img {
+            display: block;
+        }
+    </style>
+</section>
+​
+<!-- Задание №3: Сделайте так, чтобы блоки task-3 были в одну строку -->
+<section>
+    <div class="task-3">Главная</div>
+    <div class="task-3">Блог</div>
+    <div class="task-3">Фронтенд</div>
+    <div class="task-3">Делаем список в строку</div>
+    <style>
+        .task-3 {
+            display: inline;
+            font-style: italic;
+        }
+    </style>
+</section>
+​
+<!--
+  Задание №4: Сделайте так, чтобы блок task-4-item находился
+  на той-же строке где и остальной текст и небыло переноса текста
+-->
+<section>
+    Lorem ipsum,
+    <div class="task-4">dolor sit amet</div>
+    consectetur adipisicing elit. Minima consequatur totam vel. Atque eligendi eaque dolorum, labore
+    earum aspernatur perferendis tempore corporis, minima quisquam nulla accusamus libero fugiat esse
+    quos.
+    <style>
+        .task-4 {
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</section>
+​
+<!--
+  Задание №5: Расположите кнопки по горизонтали, чтобы они
+  следовали за текстом и не выходили за границы блока task-5
+-->
+<section>
+    <div class="task-5">
+        Чтобы войти нажмите
+        <div class="task-5-button">Сюда</div>
+        , а чтобы выйти
+        <div class="task-5-button">Сюда</div>
+    </div>
+    <style>
+        .task-5 {
+            border: 1px solid #000;
+        }
+        .task-5-button {
+            display: inline-block;
+            min-width: 150px;
+            padding: 10px;
+            border: 1px solid #000;
+            background: brown;
+            color: #fff;
+            font-size: 20px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+</section>
+​
+<!--
+​
+​
+  ДОПОЛНИТЕЛЬНЫЕ ЗАДАНИЯ
+  выполняются дома, либо на занятии если есть свободное время
+
+​
+-->
+​
+<aside style="opacity: 0.5">
+    <h2>Дополнительно</h2>
+    ​
+    <!--
+    Задание №6: Не применяются размеры у блока task-6-item
+    и фон залезает на другие строки
+  -->
+    <section>
+        <p>
+            Cheese and wine ricotta danish fontina. Brie cheesy grin paneer squirty cheese taleggio
+            cheesecake <span class="task-6">goat taleggio</span>. Bavarian bergkase emmental fromage
+            cheesecake cheese slices cheesy grin queso caerphilly.
+        </p>
+        <style>
+            .task-6 {
+                display: inline-block;
+                width: 100px;
+                height: 180px;
+                padding: 20px;
+                background: blue;
+            }
+        </style>
+    </section>
+    ​
+    <!-- Задание №7: Расположите все картинки вертикально -->
+    <section>
+        <img class="task-7" src="https://picsum.photos/400/250" alt="" />
+        <img class="task-7" src="https://picsum.photos/300/200" alt="" />
+        <img class="task-7" src="https://picsum.photos/500/270" alt="" />
+        <img class="task-7" src="https://picsum.photos/350/300" alt="" />
+        <style>
+            .task-7 {
+                display: block;
+            }
+        </style>
+    </section>
+    ​
+    <!-- Задание №8: Выровняйте все картинки по верхнему краю -->
+    <section>
+        <img class="task-8" src="https://picsum.photos/150/200" alt="" />
+        <img class="task-8" src="https://picsum.photos/150/300" alt="" />
+        <img class="task-8" src="https://picsum.photos/150/400" alt="" />
+        <img class="task-8" src="https://picsum.photos/150/150" alt="" />
+        <style>
+            .task-8 {
+                vertical-align: top;
+            }
+        </style>
+    </section>
+    ​
+    <!-- Задание №9: Выровняйте картинку по правому краю (способ 1) -->
+    <section>
+        <img class="task-9" src="https://picsum.photos/150/200" alt="" />
+        <style>
+            .task-9 {
+                display: block;
+                margin-left: auto;
+            }
+        </style>
+    </section>
+    ​
+    <!-- Задание №10: Выровняйте картинку по правому краю (способ 2) -->
+    <section style="display: block; text-align: right">
+        <img class="task-10" src="https://picsum.photos/200/200" alt="" />
+
+        <style>
+
+        </style>
+    </section>
+</aside>
