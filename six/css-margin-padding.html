@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<title>Margin + padding</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+<style>
+  .task-1,
+  .task-2,
+  .task-3,
+  .task-4,
+  .task-5,
+  .task-6 {
+    border: 1px solid;
+  }
+</style>
+<h1>Margin + padding</h1>
+
+<!-- 
+  Для решения заданий не меняйте html разметку блоков, 
+  только CSS код внутри style внутри задания 
+-->
+
+<!-- Задание #1: Добавьте блоку внешний отступ в 20px со всех сторон -->
+<section>
+  <span class="task-1">Блок</span>
+  <style>
+    .task-1 {
+      display: block;
+      margin: 20px;
+    }
+  </style>
+</section>
+
+<!-- Задание #2: Добавьте блоку внутренний отступ в 20px со всех сторон -->
+<section>
+  <span class="task-2">Блок</span>
+  <style>
+    .task-2 {
+      display: block;
+      padding: 20px;
+    }
+  </style>
+</section>
+
+<!-- Задание #3: Задайте внешний отступ по 10px сверху и снизу -->
+<section>
+  <span class="task-3">Блок</span>
+  <style>
+    .task-3 {
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</section>
+
+<!-- Задание #4: Предыдущее задание но другим способом -->
+<section>
+  <span class="task-4">Блок</span>
+  <style>
+    .task-4 {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</section>
+
+<!--
+  Задание #5: Добавьте внутренние отступы: 
+  по горизонтали 20px и 5px по вертикали 
+-->
+<section>
+  <span class="task-5">Блок</span>
+  <style>
+    .task-5 {
+      padding: 5px 20px;
+    }
+  </style>
+</section>
+
+<!--
+  Задание #6: Добавьте внутренний отступ по вертикали 10px 
+  и внешний отступ 20px по горизонтали
+-->
+<section>
+  <span class="task-6">Блок</span>
+  <style>
+    .task-6 {
+      display: block;
+      padding: 10px 0;
+      margin: 0 20px;
+    }
+  </style>
+</section>
+
+<!-- 
+
+
+  ДОПОЛНИТЕЛЬНЫЕ ЗАДАНИЯ
+  выполняются дома, либо на занятии если есть свободное время
+  
+
+-->
+
+<aside style="opacity: 0.5">
+  <h2>Дополнительно</h2>
+
+  <!--
+    Задание #7: укажите внешний отступ 10px сверху и 40px снизу, 
+    какое будет расстояние между блоками? Почему такое? Ответ: 40px из-за схлопывания марджинов
+  -->
+  <section>
+    <div class="task-7">Блок 1</div>
+    <div class="task-7">Блок 2</div>
+    <div class="task-7">Блок 3</div>
+    <style>
+      .task-7 {
+        outline: blue solid 1px;
+        margin: 10px 0 40px 0;
+      }
+    </style>
+  </section>
+
+  <!--
+    Задание 8: сделайте так чтобы расстояние между блоками было 30px
+    (т.е. у первого не должно быть отступа сверху, а у последнего снизу)
+  -->
+  <section>
+    <div class="task-8">Блок 1</div>
+    <div class="task-8">Блок 2</div>
+    <div class="task-8">Блок 3</div>
+    <style>
+      .task-8 {
+        outline: blue solid 1px;
+      }
+      .task-8:nth-child(2) {
+        margin: 30px 0;
+      }
+    </style>
+  </section>
+</aside>
