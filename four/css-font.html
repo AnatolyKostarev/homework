@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<title>Шрифты</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+<h1>Шрифты</h1>
+
+<!-- 
+  Для решения заданий не меняйте html разметку блоков, 
+  только CSS код внутри style внутри задания 
+-->
+
+<!-- 
+  Задание #1: Задайте нужный шрифт абзацам:
+  у первого serif, у второго sans-serif, у третьего monospace 
+-->
+<section>
+  <article>
+    <p class="task-1-serif">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="task-1-sans">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <p class="task-1-mono">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  </article>
+  <style>
+    .task-1-serif {
+      font-family: serif;
+    }
+    .task-1-sans {
+      font-family: sans-serif;
+    }
+    .task-1-mono {
+      font-family: monospace;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #2: Задайте размер шрифта в 24px, межстрочный интервал 1.25 и шрифт serif
+-->
+<section>
+  <article class="task-2">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis dicta. Odit fugiat
+      et amet officiis quisquam totam error laudantium tempore praesentium ipsa accusamus
+      voluptatum, cupiditate ab in consequatur aliquid.
+    </p>
+  </article>
+  <style>
+    .task-2 {
+      font-family: serif;
+      font-size: 24px;
+      line-height: 1.25;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #3: Выполните предыдущее задание но другим способом
+-->
+<section>
+  <article class="task-3">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis dicta. Odit fugiat
+      et amet officiis quisquam totam error laudantium tempore praesentium ipsa accusamus
+      voluptatum, cupiditate ab in consequatur aliquid.
+    </p>
+  </article>
+  <style>
+    .task-3 {
+      font: 24px /1.25 serif;
+    }
+  </style>
+</section>
+
+<!-- Задание #4: Сделайте текст наклонным и жирным -->
+<section>
+  <article class="task-4">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis dicta. Odit fugiat
+      et amet officiis quisquam totam error laudantium tempore praesentium ipsa accusamus
+      voluptatum, cupiditate ab in consequatur aliquid.
+    </p>
+  </article>
+  <style>
+    .task-4 {
+      font-style: oblique;
+      font-weight: bold;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #5: Укажите размер шрифта в 200% от размера шрифта документа
+  (у блока task-5-item)
+-->
+<section>
+  <article class="task-5">
+    <p class="task-5-item">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae et asperiores nam ex
+      laudantium rerum id illo accusamus omnis quisquam? Modi similique natus deserunt, esse
+      accusamus temporibus eum at neque.
+    </p>
+  </article>
+  <style>
+    .task-5 {
+      font-size: 10px;
+    }
+    .task-5-item {
+      font-size: 2rem;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #6: Укажите размер шрифта в 50% от размера шрифта родителя
+  (у блока task-6-item)
+-->
+<section>
+  <article class="task-6">
+    <p class="task-6-item">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae et asperiores nam ex
+      laudantium rerum id illo accusamus omnis quisquam? Modi similique natus deserunt, esse
+      accusamus temporibus eum at neque.
+    </p>
+  </article>
+  <style>
+    .task-6 {
+      font-size: 60px;
+    }
+    .task-6-item {
+      font-size: 0.5em;
+    }
+  </style>
+</section>
