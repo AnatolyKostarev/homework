@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<title>Border + outline</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+
+<h1>Border + outline</h1>
+
+<!-- 
+  Для решения заданий не меняйте html разметку блоков, 
+  только CSS код внутри style внутри задания 
+-->
+
+<!-- Задание #1: Добавьте блоку обводку в 2px точками любого цвета -->
+<section>
+  <span class="task-1">Блок</span>
+  <style>
+    .task-1 {
+      outline: 2px dotted red;
+    }
+  </style>
+</section>
+
+<!-- Задание #2: Добавьте блоку границу в 2px пунктиром любого цвета -->
+<section>
+  <span class="task-2">Блок</span>
+  <style>
+    .task-2 {
+      border: 2px dashed green;
+    }
+  </style>
+</section>
+
+<!-- Задание #3: Добавьте блоку границу слева и сверху в 2px сплошную любого цвета -->
+<section>
+  <span class="task-3">Блок</span>
+  <style>
+    .task-3 {
+      border-left: 2px solid olivedrab;
+      border-top: 2px solid olivedrab;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #4: Добавьте блоку границу 2px сплошную любого 
+  цвета и сделайте закругление всех углов на 6px 
+-->
+<section>
+  <span class="task-4">Блок</span>
+  <style>
+    .task-4 {
+      border: 2px solid darkgoldenrod;
+      border-radius: 6px;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание #5: Добавьте блоку границу 2px сплошную любого 
+  цвета и сделайте закругление правого верхнего и нижнего угла на 6px 
+-->
+<section>
+  <span class="task-5">Блок</span>
+  <style>
+    .task-5 {
+      border: 2px solid fuchsia;
+      border-radius: 0 6px 6px 0;
+    }
+  </style>
+</section>
+
+<!-- 
+
+
+  ДОПОЛНИТЕЛЬНЫЕ ЗАДАНИЯ
+  выполняются дома, либо на занятии если есть свободное время
+  
+
+-->
+
+<aside style="opacity: 0.5">
+  <h2>Дополнительно</h2>
+
+  <!-- 
+    Задание #6: Сделайте рамку в 5px сплошную, которая повторяет цвет текста
+    (нельзя написать border-color: red)
+  -->
+  <section>
+    <span class="task-6">Блок</span>
+    <style>
+      .task-6 {
+        color: red;
+        border: 5px solid currentColor;
+      }
+    </style>
+  </section>
+</aside>
