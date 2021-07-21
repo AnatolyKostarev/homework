@@ -36,7 +36,7 @@
 <div class="square task-2">Абсолютно, чуть ниже правого верхнего угла</div>
 <style>
     .task-2 {
-        position: fixed;
+        position: absolute;
         top: 20px;
         right: 0;
     }
@@ -45,16 +45,17 @@
 <div class="square task-3">Расположен правее на 250 px</div>
 <style>
     .task-3 {
-        position: fixed;
-        right: 250px;
+        position: relative;
+        left: 250px;
     }
 </style>
 ​
 <div class="square task-4">Двигается вместе со скроллом</div>
 <style>
     .task-4 {
-        position: absolute;
+        position: fixed;
         right: 0;
+        bottom: 250px;
     }
 </style>
 ​
