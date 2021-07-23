@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<title>Transition</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+
+<h1>Transition</h1>
+
+<!-- 
+  Задание 1: Сделайте красную кнопку 150x150, при наведении на нее
+  плавно измените цвет фона на оранжевый
+-->
+<section>
+  <button type="button" class="task-1"></button>
+  <style>
+      .task-1 {
+        background: red;
+        width: 150px;
+        height: 150px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s linear;
+      }
+
+      .task-1:hover {
+        background: orange;
+        transition: 0.3s linear;
+      }
+  </style>
+</section>
+
+<!-- 
+  Задание 2: Сделайте красную кнопку 150x150, при получении фокуса
+  переместите ее на 300px вправо
+-->
+<section>
+  <button type="button" class="task-2"></button>
+  <style>
+    .task-2 {
+      background: red;
+      width: 150px;
+      height: 150px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .task-2:focus {
+      transition-duration: 2s;
+      margin-left: 300px;
+    }
+  </style>
+</section>
+
+<!-- 
+  Задание 3: Сделайте красную кнопку 150x150, 
+  при клике поворачивайте ее на 90 градусов
+-->
+<section>
+  <button type="button" class="task-3"></button>
+  <style>
+    .task-3 {
+      background: red;
+      width: 150px;
+      height: 150px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      transition: transform 1s ease;
+    }
+
+    .task-3:active {
+      transform: rotate(90deg);
+    }
+  </style>
+</section>

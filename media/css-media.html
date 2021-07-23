@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<title>Media</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://raw.githack.com/Saint-Code-Bootcamp/homework/main/tasks.css" />
+
+<h1>Media</h1>
+
+<!-- 
+  Для решения заданий не меняйте html разметку блоков, 
+  только CSS код внутри style внутри задания 
+-->
+
+<!-- 
+  Задание: Сделайте чтобы блок был горизонтальным прямоугольником 
+  на большом экране и вертикальным на маленьком. Если пользователь
+  предпочитает темную тему, то покрасьте блок черный, если светлую, 
+  то сделайте рамку в 1px
+-->
+<section>
+  <div class="task-1"></div>
+  <style>
+    .task-1 {
+      width: 200px;
+      height: 200px;
+      background: red;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .task-1  { background:  #000;}
+    }
+
+    @media (prefers-color-scheme: light) {
+      .task-1 { background:  #fff; border: 1px solid red;}
+    }
+
+    @media screen and (min-width: 992px) {
+      .task-1 {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 991px){
+      .task-1 {
+        margin: 0 auto;
+        width: 200px;
+        height: 800px;
+      }
+    }
+  </style>
+</section>
